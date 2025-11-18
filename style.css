@@ -1,0 +1,220 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #0f0f0f;
+  color: #fff;
+}
+
+.search-nav {
+  padding: 30px 50px;
+  font-size: 12px;
+  color: #aaa;
+}
+
+.search-nav a {
+  color: #aaa;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 60px;
+}
+
+/* LEFT SEARCH PANEL */
+.search-left h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #444;
+  padding: 10px 12px;
+  width: 280px;
+  border-radius: 4px;
+}
+
+.search-box img {
+  width: 18px;
+  opacity: 0.6;
+}
+
+.search-box input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  margin-left: 10px;
+}
+
+.hint {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #bbb;
+}
+
+/* FILTER BOX */
+.filter-box {
+  background: #1a1a1a;
+  padding: 25px 30px;
+  width: 380px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.filter-box h3 {
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.filter-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 40px;
+}
+
+.filter-grid label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+input[type="radio"] {
+  accent-color: #f25c2a; /* orange highlight */
+}
+
+/* DIVIDER */
+.big-line {
+  border: none;
+  border-top: 1px solid #333;
+  margin: 30px 60px;
+}
+
+/* RESULTS */
+.results {
+  padding: 20px 60px;
+}
+
+.result {
+  margin-bottom: 40px;
+}
+
+.category {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.cat-name {
+  font-weight: 700;
+}
+
+.seafood { color: #2daef7; }
+.chicken { color: #88ff66; }
+
+.result-title {
+  font-size: 20px;
+  font-weight: 900;
+  margin: 8px 0 12px;
+}
+
+.excerpt {
+  width: 60%;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+.small-line {
+  border: none;
+  border-top: 1px solid #333;
+  margin: 30px 0;
+}
+
+/* =====================================================
+   MOBILE RESPONSIVE — SEARCH RESULTS PAGE
+   ===================================================== */
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  /* NAVIGATION */
+  .search-nav {
+    padding: 20px;
+    font-size: 11px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .search-nav a {
+    margin: 0;
+  }
+
+  /* MAIN WRAPPER */
+  .search-container {
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  /* LEFT PANEL */
+  .search-left h2 {
+    font-size: 16px;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .hint {
+    font-size: 11px;
+  }
+
+  /* FILTER PANEL */
+  .filter-box {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .filter-grid {
+    grid-template-columns: 1fr; /* 2 columns → 1 column */
+    gap: 12px;
+  }
+
+  .filter-grid label {
+    font-size: 13px;
+  }
+
+  .big-line {
+    margin: 20px;
+  }
+
+  /* RESULTS LIST */
+  .results {
+    padding: 20px;
+  }
+
+  .result-title {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+
+  .excerpt {
+    width: 100%; /* full width on mobile */
+    font-size: 13px;
+  }
+
+  .small-line {
+    margin: 20px 0;
+  }
+}
